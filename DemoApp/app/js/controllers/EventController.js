@@ -5,7 +5,12 @@ eventsApp.controller('EventController',
         $scope.event = {
             name: 'Angular Boot Camp',
             date: '1/1/2013',
-            time: '10:30 am'
+            time: '10:30 am',
+            location: {
+                address: 'Google Hq',
+                city: 'Mountain View',
+                province: 'CA'
+            }
         }
 
     }
