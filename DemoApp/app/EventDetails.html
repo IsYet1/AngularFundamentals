@@ -22,7 +22,12 @@
         <img ng-src="{{event.imageUrl}}" alt="{{event.name}}" />
         <div class="row">
             <div class="span11">
+                <!--Explicit
                 <h2>{{event.name}}</h2>
+                -->
+                <!--OR ng-bind
+                -->
+                <h2 ng-bind="event.name"></h2>
             </div>
         </div>
         <div class="row">
