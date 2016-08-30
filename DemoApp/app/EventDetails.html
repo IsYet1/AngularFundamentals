@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html ng-app="eventsApp">
+<head>
+    <meta charset="utf-8">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+</head>
+
+<body>
+
+<div class="container">
+    <div ng-controller="EventController">
+        {{event.name}}
+    </div>
+</div>
+
+</body>
+
+<script src="/app/lib/jquery.min.js"></script>
+<script src="/app/lib/underscore-1.4.4.min.js"></script>
+<script src="/app/lib/bootstrap.min.js"></script>
+<script src="/app/lib/angular.angular.js"></script>
+<script src="/app/js.app.js"></script>
+<script src="/app/js/controllers/EventController.js"></script>
+
+
+</html>
