@@ -10,7 +10,8 @@ eventsApp.controller('EventController',
                 address: 'Google Hq',
                 city: 'Mountain View',
                 province: 'CA'
-            }
+            },
+            imageUrl: '/img/angularjs-logo.png'
         }
 
     }
