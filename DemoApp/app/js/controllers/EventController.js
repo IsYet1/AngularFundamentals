@@ -1,9 +1,5 @@
 'use strict';
 
-
-alert('in the controller');
-
-
 eventsApp.controller('EventController', 
     function EventController($scope) {
         $scope.event = {
