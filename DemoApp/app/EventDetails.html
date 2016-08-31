@@ -30,7 +30,8 @@
                 -->
                 <!--OR bind-template
                 -->
-                <!--<h2 ng-style="myStyle" ng-bind-template="{{event.name}} {{event.date}}"></h2>-->
+                <!--<h2 ng-style="myStyle" ng-bind-template="{{event.name}} {{event.date}}"></h2>
+                -->
                 <h2 ng-class="colorClass" ng-bind-template="{{event.name | uppercase}} {{event.date}}"></h2>
             </div>
         </div>
@@ -46,7 +47,7 @@
 
         <div class="row">
             <div class="span3">
-                <div><strong>Date:</strong> {{event.date}}</div>
+                <div><strong>Date:</strong> {{event.date | date:'mediumDate'}}</div>
                 <div><strong>Time:</strong> {{event.time}}</div>
                 <div><strong>Price:</strong> {{34 | currency}}</div>
             </div>
@@ -60,6 +61,7 @@
         </div>
 
         <div> {{1.23457657 | number:3}}</div>
+        <div>{{ {a:3, b:'hi', c:{aa:35} } |json }}</div>
         <hr />
 
         <h3>Sessions</h3>
@@ -87,6 +89,7 @@
                     </div>
                 </div>
             </li>
+        </ul>
     </div>
 </div>
 
