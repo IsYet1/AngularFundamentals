@@ -2,7 +2,7 @@
 
 eventsApp.controller('EventController', 
     function EventController($scope) {
-        $scope.sortorder = '-upVoteCount'; 
+        $scope.sortorder = 'name'; 
 
         $scope.snippet = '<span style="color:red">hi there</span>';
         $scope.boolValue = true;
