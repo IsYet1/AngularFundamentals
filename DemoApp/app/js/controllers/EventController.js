@@ -6,6 +6,7 @@ eventsApp.controller('EventController',
         $scope.boolValue = true;
         $scope.myStyle = {color:'blue'};
         $scope.colorClass = "green";
+        $scope.buttonDisabled = false;
         $scope.event = {
             name: 'Angular Boot Camp',
             date: '1/1/2013',

@@ -31,9 +31,11 @@
                 <!--OR bind-template
                 -->
                 <!--<h2 ng-style="myStyle" ng-bind-template="{{event.name}} {{event.date}}"></h2>-->
-                <h2 ng-class="colorClass" ng-bind-template="{{event.name}} {{event.date}}"></h2>
+                <h2 ng-class="colorClass" ng-bind-template="{{event.name | uppercase}} {{event.date}}"></h2>
             </div>
         </div>
+
+        <button class="btn" ng-disabled="buttonDisabled">Disabled</button>
 
         <!--
             <div ng-bind-html="snippet">some title that will not display</div>
@@ -46,6 +48,7 @@
             <div class="span3">
                 <div><strong>Date:</strong> {{event.date}}</div>
                 <div><strong>Time:</strong> {{event.time}}</div>
+                <div><strong>Price:</strong> {{34 | currency}}</div>
             </div>
             <div class="span4">
                 <address>
@@ -55,6 +58,8 @@
                 </address>
             </div>
         </div>
+
+        <div> {{1.23457657 | number:3}}</div>
         <hr />
 
         <h3>Sessions</h3>
