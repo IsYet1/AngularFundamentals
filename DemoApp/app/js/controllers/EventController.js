@@ -37,7 +37,7 @@ eventsApp.controller('EventController',
                     upVoteCount: 0
                 },
                 {
-                    name: 'Well Behaved Controllers',
+                    name: 'Well Behaved Controllers - Advanced',
                     creatorName: 'Jane Doe',
                     duration: '2 hours',
                     level: 'Intermediate',
